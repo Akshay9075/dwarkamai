@@ -32,10 +32,16 @@
       <div class="col-lg-7">
         <div class="contact-form-wrapper" data-aos="fade-up">
           <h3>Send a Message</h3>
-          <div id="formSuccess" class="alert alert-success d-none" role="alert">
-            <i class="bi bi-check-circle-fill"></i> Thank you! Your message has been received.
-          </div>
-          <form id="contactForm" novalidate>
+          <form action="https://formsubmit.co/nikamakshay0123@gmail.com" method="POST">
+
+        <!-- FormSubmit Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Optional Redirect -->
+        <!-- Replace with your thank you page -->
+        <input type="hidden" name="_next" value="https://akshay9075.github.io/dwarkamai/contact.html">
             <div class="row g-3">
               <div class="col-md-6">
                 <label class="form-label" for="contactName">Name *</label>
@@ -108,5 +114,5 @@
   <div class="floating-buttons"><a href="https://wa.me/919371207307" class="floating-btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a><a href="tel:9371207307" class="floating-btn call" aria-label="Call"><i class="bi bi-telephone-fill"></i></a><button class="floating-btn scroll-top" id="scrollToTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button></div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
 </body></html>
