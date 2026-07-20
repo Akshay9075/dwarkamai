@@ -1,0 +1,111 @@
+/* ============================================================
+   Dwarkamai Digital Seva CSC - Responsive Styles
+   ============================================================ */
+
+html, body { max-width: 100%; overflow-x: hidden; }
+
+@media (max-width: 1199.98px) {
+  .hero-content h1 { font-size: 2.4rem; }
+  .hero-content .hero-marathi { font-size: 1.65rem; }
+  .section-title h2 { font-size: 1.9rem; }
+  .navbar-brand img { height: 54px; }
+}
+
+@media (max-width: 991.98px) {
+  .top-bar { display: none; }
+  .navbar-collapse {
+    background: var(--white); padding: 1rem; border-radius: 10px;
+    box-shadow: var(--shadow); margin-top: 0.5rem; max-height: calc(100vh - 90px); overflow-y: auto;
+  }
+  .navbar-nav { text-align: center; }
+  .navbar-nav .nav-link::after { display: none; }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover { background: rgba(0,61,165,0.06); border-radius: 8px; }
+  .btn-nav-cta {
+    margin-left: 0 !important; margin-top: 0.5rem; width: 100%;
+    display: inline-flex !important; justify-content: center;
+  }
+  .hero-section { min-height: auto; }
+  .hero-content { padding: 90px 0 70px; text-align: center; }
+  .hero-content h1 { font-size: 2.1rem; }
+  .hero-buttons { justify-content: center; }
+  .features-bar { margin-top: -40px; }
+  .about-content { margin-top: 1.5rem; text-align: center; }
+  .about-list li { text-align: left; }
+  .cta-section { text-align: center; }
+  .cta-buttons { justify-content: center; margin-top: 1.3rem; }
+  .page-banner { padding: 70px 0 55px; }
+  .page-banner h1 { font-size: 1.9rem; }
+  .section-padding { padding: 60px 0; }
+  .service-toolbar { flex-direction: column; align-items: stretch; }
+  .service-search { max-width: 100%; }
+}
+
+@media (max-width: 767.98px) {
+  body { padding-bottom: 90px; }
+  .hero-content h1 { font-size: 1.75rem; }
+  .hero-content .hero-marathi { font-size: 1.35rem; }
+  .hero-content .hero-tagline { font-size: 1rem; }
+  .section-title h2 { font-size: 1.55rem; }
+  .about-img-wrap img { height: 280px; }
+  .gallery-item img { height: 210px; }
+  .cert-card .cert-img { height: 240px; }
+  .contact-form-wrapper { padding: 1.4rem; }
+  .map-embed { height: 280px; }
+  .floating-buttons { bottom: 12px; right: 12px; gap: 8px; }
+  .floating-btn { width: 46px; height: 46px; font-size: 1.15rem; }
+  .footer-about, .footer-widget { text-align: center; margin-bottom: 1.4rem; }
+  .footer-title::after { left: 50%; transform: translateX(-50%); }
+  .footer-links a, .footer-contact li { justify-content: center; }
+  .footer-social { justify-content: center; }
+  .stat-item h3 { font-size: 2rem; }
+  .policy-content { padding: 1.4rem 1.1rem; }
+}
+
+@media (max-width: 575.98px) {
+  .section-padding { padding: 48px 0; }
+  .hero-content { padding: 75px 0 55px; }
+  .hero-content h1 { font-size: 1.55rem; }
+  .hero-content .hero-marathi { font-size: 1.2rem; }
+  .hero-buttons { flex-direction: column; width: 100%; }
+  .hero-buttons a { width: 100%; justify-content: center; }
+  .features-bar { margin-top: -28px; padding: 1rem 0.4rem; }
+  .feature-icon { width: 50px; height: 50px; }
+  .feature-icon i { font-size: 1.15rem; }
+  .feature-item h5 { font-size: 0.85rem; }
+  .service-card { padding: 1.2rem 0.9rem; }
+  .cta-buttons { flex-direction: column; width: 100%; }
+  .cta-buttons a { width: 100%; justify-content: center; }
+  .page-banner h1 { font-size: 1.45rem; }
+  .navbar-brand img { height: 44px; }
+  .gallery-filter button { padding: 0.35rem 0.85rem; font-size: 0.78rem; }
+  .gallery-item img { height: 170px; }
+  .footer-policies { flex-direction: column; align-items: center; gap: 0.5rem; }
+  .footer-policies .sep { display: none; }
+  .cta-section h2 { font-size: 1.4rem; }
+}
+
+@media (max-width: 400px) {
+  .hero-content h1 { font-size: 1.35rem; }
+  .navbar-brand img { height: 38px; }
+  .floating-btn { width: 42px; height: 42px; font-size: 1.05rem; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,61,165,0.75), transparent 55%);
+  }
+  .service-card:hover, .why-card:hover, .testimonial-card:hover, .cert-card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
